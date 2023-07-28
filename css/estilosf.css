@@ -1,0 +1,193 @@
+:root{
+    --fuenteprincipal: 'Roboto', sans-serif;/*es la fuente principal del estilo de texto*/
+    --primario:#834b03c0;/*color primario definido*/
+    --secundario:#d46b09;/* color secundario definido*/
+}
+
+html{/* es toda la caja de la pagina*/
+    font-size: 62.2%;
+    box-sizing:border-box;/*establece el ancho y alto de la caja*/
+ 
+}
+*,*:before,
+*:after{
+    box-sizing: inherit;
+}
+h1{
+text-align: center;/* alineacion del texto*/
+text-transform: capitalize;/*pone en mayusculas las letras*/
+font-family: var(--fuenteprincipal);/* estilo de texto */
+font-size: 4rem;/*tamaño de la caja */
+color: rgb(0, 0, 0);
+}
+.contenido{
+    max-width: 100%;
+}
+.contenido img{
+    width: 1760px auto;
+    height: 435px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: 3rem;
+}
+.navegacion{
+    display: grid;/*activarlo para que funcione el grid*/
+    grid-template-columns: repeat(4,295px);/*habilita una cuadricula en columnas*/
+    grid-column-gap:4rem ;/* separar el espaciado entre cada cuadro*/
+    justify-content: center;/* justifica y centra el cuadro*/
+}
+.navegacion a{
+    font-family: var(--fuenteprincipal);/*estilo de texto y tamaño de fuente*/
+    font-size: 2rem;/* colocar en linea*/
+    display: inline;/*texto centrado*/
+    text-align: center;/* color del texto del enlace*/
+    color: white;/*var(--primario)*/ /* relleno de color de texto*/
+    background-color: var(--primario);/* relleno de color del fondo*/
+    text-transform: uppercase;/* letras en mayusculas*/
+    text-decoration: none;/* quita la linea de abajo del texto como link*/
+    border-radius: 4px;/*redondea al elemento*/
+    margin-top: 2rem;/* separacion entre cabecera y navegacion*/
+    padding: 2rem 2rem;
+}
+.navegacion a:hover{/*El hover sirve para cambiar el aspecto cuando pase el mouse por arriba*/
+background-color: var(--secundario);/* es el color del fondo del cuadro*/
+color: var(--primario);/* es el color de las letras que se muestran en la caja*/
+
+}
+
+h2{
+    text-align: center;
+    font-family: var(--fuenteprincipal);
+    font-size: 2rem;
+    margin-top: 4rem;
+    color: rgb(253, 253, 253);
+    text-transform: capitalize;
+}
+
+.direccion{
+    display: grid;
+    grid-template-columns: repeat(6,150px);
+    grid-column-gap:0rem ;
+    justify-content: center;
+    
+}
+
+.direccion a{
+    font-size: 1rem;
+    display: inline;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 1px;
+    margin-top: 2rem;
+    padding-top: 3rem;
+    padding-left: 10rem;
+    padding-right: 18rem;
+    padding-bottom: 5rem;
+}
+footer .direccion{
+    background-color: var(--primario);
+    padding-top: .5rem;
+    padding-left: 30rem;
+    padding-bottom: .5rem;
+    padding-right: 4rem;
+    border-top: 8rem;
+    margin: 1rem solid var(--primario);
+}
+footer p{
+    padding-left: 4rem;
+    padding-right: 8rem;
+}
+footer{
+    padding-top:12rem;
+    border-top: 12rem;
+}
+.iconos {
+    display: grid;
+    grid-template-columns: repeat(2,590px);
+    justify-content: center;
+    justify-content: center;
+}
+
+.iconos .iconos2{
+    display: grid;
+    grid-template-columns: repeat(2,200px);
+    justify-content: center;
+    align-items: flex-end;
+}
+ .iconos img{
+   padding-left: 200px;
+   padding-top: 70px;
+
+ }
+ footer .redes{
+    background-color: rgba(161, 78, 11, 0.87);
+    font-size: 1rem;  
+    text-transform: uppercase;
+}
+/*estilos de formulario*/ 
+ .formulario{
+    background-color: var(--primario);
+    width: min(60rem,100%);/* va a tomar un ancho de 60rem se ajusta, y cuando este en un dipositivo grande se ajusta al 100 porciento */
+    margin: 0% auto;/*ajustarse dentro del contenedor*/
+    padding: 7rem ;
+    border-radius: 5rem;
+    margin-top: 2rem;
+ }
+ .formulario fieldset{
+    border: none;
+ }
+
+ .formulario legend{
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color:  rgba(255, 255, 254, 0.973);
+ }
+.campos{
+    margin-bottom: 1rem;
+}
+.campos label{
+    font-size: 1.8rem;
+    color: rgb(255, 252, 252);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    display: block;
+    text-transform: uppercase;
+}
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+.campos .textarea{
+    width: 100%;
+    height: 15rem;
+}
+.w-100{
+    width: 100%;
+}
+.boton{
+    background-color: gray;
+    color: white;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+.redes {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}

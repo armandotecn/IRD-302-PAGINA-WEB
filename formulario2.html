@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos CSS/estilosf.css">
+    <title>mi segunda pagina</title>
+    <!--este es le metadato de la poagina-->
+</head>
+
+<body>
+    <div>
+        <header class="contenido">
+            <h1>Empresa de Reciclaje</h1> <!--titulo de la empresa-->
+            <a href="index.html">
+                <img src="./imagnes/portada.jpg" alt="R">
+                <!--imagen de empresa-->
+            </a>
+    </div>
+    <div class="navegacion">
+        <a href="manejo.html" target="_blank">manejo de basura</a>
+        <a href="residuiospel.html" target="_blank">residuos pleigrosos</a>
+        <a href="residuosqui.html" target="_blank">residuos quimicos</a>
+        <a href="manejopet.html" target="_blank">manejo de pet</a>
+        <!--menu de la pagina-->
+    </div>
+    <main class="contenedor">
+        <h2>Componentes de formulario</h2>
+        <form class="formulario2">
+
+        <div class="f1">
+        <fieldset class="fildset1">
+        <legend class="legend1">Datos personales</legend><!--daros personales-->
+        <div class="nombre">
+        <label>nombre</label>
+    </div>
+        <input class="input1" type="text" placeholder="Tu nombre es">
+        <div class="apelldos">
+        <label>apellidos</label>
+    </div>
+        <input class="input1" type="text" placeholder="Tus apellidos">
+        <label>genero</label>
+        <input class="input1" type="radio" value="hombre" checked autofocus> hombre<!--se marca hombre-->
+        <input class="input1" type="radio" value="mujer" >mujer
+        <label>fecha de nacimiento</label>
+        <input class="input1" type="date"><!--calendario-->
+        <label>correo</label>
+        <input class="input1" type="email" placeholder="correo@dominio.com">
+        <label>esil tio de tu universodad</label>
+        <input class="input1" type="url" placeholder="https://wwww.domminio.edu"><!--se vsualiza el texto a llenar-->
+        <label>cuanto sabes de desarrollo web</label>
+        <input class="input1" type="range" min="0" max="10"><!--rango de 0 a 10(BARRA)-->
+        <label>cuantos ID conoces ?</label>
+        <input class="input1" type="number" min="1" max="9"><!--=se colocan los numeros=-->
+    </form>
+    </fieldset>
+    </div><!--CIERRE DE DATOS-->
+    <form class="formulario3">.
+    <fieldset class="fieldset2">
+        <legend class="legend">Informacion sobre Aplicaiones</legend>
+        <label> apliciones</label>
+        <select class="aplicaiones"><!--Conjunto de opciones-->
+        <option values="HTML5">HTLM5</option><!--diferentes opciones-->
+        <option value="css3">css3</option>
+        <option value="js">js</option>
+        <option value="php">php</option>
+    </select>
+    <label>Q' lengiajes te gustaria agregar</label>
+    <input class="input" list="propuesta"><!--SE le asica a la lista-->
+    <datalist id="propuesta"><!--manda a llamar con el id-->
+        <option value="pyton"></option><!--opcinoes-->
+        <option value="mysql"></option>
+        <option value="ruby"></option>
+    </datalist>
+    <label>Escoje tus lenguajes favoritos</label>
+    <input class="input3" type="checkbox" value="si">HTML5<!--se pueden colocar varias opciones-->
+    <input class="input3" type="checkbox" value="si"> css3
+    <input class="input3" type="checkbox" value="si">php
+    <input class="input3" type="checkbox" value="si">ruby
+    <input class="input3" type="checkbox" value="si">js
+    <label>En que fecha le gustaria tomar un curso?</label>
+    <input class="input3" type="month"><!--mes-->
+    <input class="input3" type="time"><!--hora-->
+    <input class="input3" type="week"><!--semana-->
+</form>
+    </fieldset>
+    <form class="fieldset2">
+    <fieldset class="fieldset3">
+        <legend>cupon extra</legend>
+        <label>Las primeras 5 personas, recibiran una playera gratis, selecciona tu color </label>
+        <input class="input1" type="color">
+</fieldset>   
+<fieldset class="fieldset4">
+        <legend class="legend"> Usurario Password </label>
+            <input class="input1" type="text" placeholder="Tu usurario">
+            <label>Password</label>
+            <input class="input1" type="password" placeholder="password" required>
+    <botton class="boton1" type="reset">Borrar</botton>
+    <botton class="boton1" type="submit">Enviar</botton>
+</fieldset>
+</div>
+</form>    
+</main>
+
+</body>
+<footer>
+    
+    <div class="redes"><a href="http://instagram.com/username"><img src="./imagnes/inst.png" width="45" height="45"
+                alt="Instagram"></a>
+        <a href="http://facebook.com/username"><img src="./imagnes/face.png" width="45" height="45" alt="Facebook"></a>
+        <a href="http://youtube.com/user/username"><img src="./imagnes/yt.png" width="45" height="45" alt="YouTube"></a>
+        <a href="http://twitter.com/user/username"><img src="./imagnes/twtt.png" width="45" height="45" alt="twitter"></a>
+    </div>
+</footer>
+
+</html>
